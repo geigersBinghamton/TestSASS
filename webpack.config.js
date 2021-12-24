@@ -4,7 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const dist = "dist/htdocs";
+const dist = "public";
 
 module.exports = (env,argv) => {
     return {

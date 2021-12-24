@@ -5,6 +5,7 @@ import {QueryClient,QueryClientProvider} from "react-query";
 import { CookiesProvider } from 'react-cookie';
 import {ToastProvider} from "react-toast-notifications";
 
+import '../css/reset.css';
 import '../css/styles.css';
 
 import StartApp from "./app";

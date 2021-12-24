@@ -9,7 +9,6 @@
         "start-dev": "webpack-dev-server --mode=development",
         "webpack": "webpack --config ./webpack.config.js",
         "webpack-dev": "webpack --mode development --config ./webpack.config.js",
-        "build-css": "cleancss src/css/styles.css -o public/css/styles.min.css",
         "build-html": "mkdir -p public && html-minifier -c html-minifier.conf src/index.html -o public/index.html",
         "clean-js": "rm -f public/js/*",
         "clean-dist": "find public/ -type f -not -path \"*/api/*\" -delete",
