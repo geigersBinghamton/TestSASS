@@ -10,7 +10,7 @@
         "webpack": "webpack --config ./webpack.config.js",
         "webpack-dev": "webpack --mode development --config ./webpack.config.js",
         "build-css": "cleancss src/css/styles.css -o public/css/styles.min.css",
-        "build-html": "html-minifier -c html-minifier.conf src/index.html -o public/index.html",
+        "build-html": "mkdir -p public && html-minifier -c html-minifier.conf src/index.html -o public/index.html",
         "clean-js": "rm -f public/js/*",
         "clean-dist": "find public/ -type f -not -path \"*/api/*\" -delete",
         "list": "find public/ -type f -not -path \"*/api/*\" -printf \"%Tb %Td %TH:%TM\\t%k\\t%p\\n\""
