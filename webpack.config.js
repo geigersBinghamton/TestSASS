@@ -6,17 +6,20 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const dist = "dist/htdocs";
 
-module.exports = (env, argv) => {
+module.exports = (env,argv) => {
     return {
         entry: './src/js/main.js',
         output: {
             path: path.resolve(__dirname, dist, 'js'),
             publicPath: '/js/',
-            filename: 'hrforms2.min.js',
+            filename: 'project.min.js',
             chunkFilename: '[chunkhash].min.js'
         },
         resolve: { 
           extensions: [".js", ".jsx"],
+        },
+        devServer: {
+          historyApiFallback: true
         },
         module: {
             rules: [
@@ -39,7 +42,6 @@ module.exports = (env, argv) => {
 							}
 						},
 						"css-loader",
-						"sass-loader"
 					]
 				}
       ]
