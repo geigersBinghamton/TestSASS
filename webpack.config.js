@@ -35,6 +35,7 @@ module.exports = (env,argv) => {
                 {
 					test: /\.(css|scss)$/,
 					use:[
+						(env.WEBPACK_SERVE)?"style-loader":
 						{
 							loader:MiniCssExtractPlugin.loader,
 							options:{
